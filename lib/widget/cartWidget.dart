@@ -34,7 +34,7 @@ class cartBarWidget extends StatelessWidget {
                 ],
               ),
               child: Icon(
-                CupertinoIcons.back,
+                Icons.arrow_back_ios,
                 color: Color(0xff47526D),
               ),
             ),
@@ -63,7 +63,7 @@ class cartBarWidget extends StatelessWidget {
                 ],
               ),
               child: Icon(
-                CupertinoIcons.person,
+                Icons.person,
                 color: Color(0xff47526D),
               ),
             ),

@@ -224,7 +224,7 @@ class itemsWidget extends StatelessWidget {
                                 color: Color(0xffDE665B)),
                           ),
                           Icon(
-                            CupertinoIcons.plus_circle_fill,
+                            Icons.add_circle,
                             size: 27,
                             color: Color(0xff47526D),
                           )
@@ -294,7 +294,7 @@ class itemsWidget extends StatelessWidget {
                                 color: Color(0xffDE665B)),
                           ),
                           Icon(
-                            CupertinoIcons.plus_circle_fill,
+                            Icons.add_circle,
                             size: 27,
                             color: Color(0xff47526D),
                           )
@@ -364,7 +364,7 @@ class itemsWidget extends StatelessWidget {
                                 color: Color(0xffDE665B)),
                           ),
                           Icon(
-                            CupertinoIcons.plus_circle_fill,
+                            Icons.add_circle,
                             size: 27,
                             color: Color(0xff47526D),
                           )
@@ -434,7 +434,7 @@ class itemsWidget extends StatelessWidget {
                                 color: Color(0xffDE665B)),
                           ),
                           Icon(
-                            CupertinoIcons.plus_circle_fill,
+                            Icons.add_circle,
                             size: 27,
                             color: Color(0xff47526D),
                           )

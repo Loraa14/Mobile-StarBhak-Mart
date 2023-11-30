@@ -1,615 +1,585 @@
 import 'package:flutter/material.dart';
 import '../widget/cartWidget.dart';
-import 'package:flutter/cupertino.dart';
 
-class cartPage extends StatelessWidget {
+class krj extends StatefulWidget {
+  const krj({super.key});
+
   @override
-  Widget build(BuildContext context) {
-     return Scaffold(
-        backgroundColor: Color.fromARGB(255, 241, 248, 255),
-      body: ListView(
-        children: [
-          SingleChildScrollView(
-            child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 10),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  SizedBox(height: 15),
-                  cartPage(),
-                  //cart items//
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 15),
-                    child: Container(
-                      decoration: BoxDecoration(),
-                      child: Row(
-                        children: [
-                          Container(
-                            margin: EdgeInsets.all(10),
-                            alignment: Alignment.center,
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(20),
-                              child: Image.asset(
-                                "images/Burger.png",
-                                width: 100,
-                                height: 100,
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-                          Container(
-                            width: 200,
-                            height: 100,
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: [
-                                Container(
-                                  child: Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Container(
-                                        child: Column(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceAround,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              "Burger",
-                                              style: TextStyle(
-                                                  fontSize: 18,
-                                                  fontWeight: FontWeight.bold,
-                                                  color: Color(0xff47526D)),
-                                            ),
-                                            Text(
-                                              "Rp 50.000",
-                                              style: TextStyle(
-                                                fontSize: 15,
-                                                fontWeight: FontWeight.normal,
-                                                color: Colors.grey,
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                      Container(
-                                        // padding: EdgeInsets.symmetric(horizontal: 5),
-                                        alignment: Alignment.topCenter,
-                                        child: Icon(
-                                          CupertinoIcons.trash,
-                                          size: 30,
-                                          color: Color(0xffDE665B),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                Container(
-                                  margin: EdgeInsets.only(top: 8),
-                                  height: 50,
-                                  alignment: Alignment.topLeft,
-                                  child: Row(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceAround,
-                                    children: [
-                                      Container(
-                                        padding: EdgeInsets.all(5),
-                                        decoration: BoxDecoration(
-                                          color: Colors.white,
-                                          borderRadius:
-                                              BorderRadius.circular(30),
-                                          boxShadow: [
-                                            BoxShadow(
-                                              color:
-                                                  Colors.grey.withOpacity(0.5),
-                                              spreadRadius: 3,
-                                              blurRadius: 10,
-                                              offset: Offset(0, 3),
-                                            ),
-                                          ],
-                                        ),
-                                        child: Icon(
-                                          CupertinoIcons.minus,
-                                          size: 20,
-                                          color: Color(0xff47526D),
-                                        ),
-                                      ),
-                                      Container(
-                                        margin: EdgeInsets.all(5),
-                                        child: Text(
-                                          "1",
-                                          style: TextStyle(
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.bold,
-                                            color: Color(0xff47526D),
-                                          ),
-                                        ),
-                                      ),
-                                      Container(
-                                        padding: EdgeInsets.all(5),
-                                        decoration: BoxDecoration(
-                                          color: Colors.white,
-                                          borderRadius:
-                                              BorderRadius.circular(30),
-                                          boxShadow: [
-                                            BoxShadow(
-                                              color:
-                                                  Colors.grey.withOpacity(0.5),
-                                              spreadRadius: 3,
-                                              blurRadius: 10,
-                                              offset: Offset(0, 3),
-                                            ),
-                                          ],
-                                        ),
-                                        child: Icon(
-                                          CupertinoIcons.plus,
-                                          size: 20,
-                                          color: Color(0xff47526D),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 15),
-                    child: Container(
-                      decoration: BoxDecoration(),
-                      child: Row(
-                        children: [
-                          Container(
-                            margin: EdgeInsets.all(10),
-                            alignment: Alignment.center,
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(20),
-                              child: Image.asset(
-                                "iamges/Teh.png",
-                                width: 100,
-                                height: 100,
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-                          Container(
-                            width: 200,
-                            height: 100,
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: [
-                                Container(
-                                  child: Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Container(
-                                        child: Column(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceAround,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              "Teh",
-                                              style: TextStyle(
-                                                fontSize: 18,
-                                                fontWeight: FontWeight.bold,
-                                                color: Color(0xff47526D),
-                                              ),
-                                            ),
-                                            Text(
-                                              "Rp 50.000",
-                                              style: TextStyle(
-                                                fontSize: 15,
-                                                fontWeight: FontWeight.normal,
-                                                color: Color(0xff47526D),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                      Container(
-                                        // padding: EdgeInsets.symmetric(horizontal: 5),
-                                        alignment: Alignment.topCenter,
-                                        child: Icon(
-                                          CupertinoIcons.trash,
-                                          size: 30,
-                                          color: Colors.red,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                Container(
-                                  margin: EdgeInsets.only(top: 8),
-                                  height: 50,
-                                  alignment: Alignment.topLeft,
-                                  child: Row(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceAround,
-                                    children: [
-                                      Container(
-                                        padding: EdgeInsets.all(5),
-                                        decoration: BoxDecoration(
-                                          color: Colors.white,
-                                          borderRadius:
-                                              BorderRadius.circular(30),
-                                          boxShadow: [
-                                            BoxShadow(
-                                              color:
-                                                  Colors.grey.withOpacity(0.5),
-                                              spreadRadius: 3,
-                                              blurRadius: 10,
-                                              offset: Offset(0, 3),
-                                            ),
-                                          ],
-                                        ),
-                                        child: Icon(
-                                          CupertinoIcons.minus,
-                                          size: 20,
-                                          color: Color(0xff47526D),
-                                        ),
-                                      ),
-                                      Container(
-                                        margin: EdgeInsets.all(5),
-                                        child: Text(
-                                          "1",
-                                          style: TextStyle(
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.bold,
-                                            color: Color(0xff47526D),
-                                          ),
-                                        ),
-                                      ),
-                                      Container(
-                                        padding: EdgeInsets.all(5),
-                                        decoration: BoxDecoration(
-                                          color: Colors.white,
-                                          borderRadius:
-                                              BorderRadius.circular(30),
-                                          boxShadow: [
-                                            BoxShadow(
-                                              color:
-                                                  Colors.grey.withOpacity(0.5),
-                                              spreadRadius: 3,
-                                              blurRadius: 10,
-                                              offset: Offset(0, 3),
-                                            ),
-                                          ],
-                                        ),
-                                        child: Icon(
-                                          CupertinoIcons.plus,
-                                          size: 20,
-                                          color: Color(0xff47526D),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 15),
-                    child: Container(
-                      decoration: BoxDecoration(),
-                      child: Row(
-                        children: [
-                          Container(
-                            margin: EdgeInsets.all(10),
-                            alignment: Alignment.center,
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(20),
-                              child: Image.asset(
-                                "images/Burger.png",
-                                width: 100,
-                                height: 100,
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-                          Container(
-                            width: 200,
-                            height: 100,
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: [
-                                Container(
-                                  child: Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Container(
-                                        child: Column(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceAround,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              "Burger",
-                                              style: TextStyle(
-                                                fontSize: 18,
-                                                fontWeight: FontWeight.bold,
-                                                color: Color(0xff47526D),
-                                              ),
-                                            ),
-                                            Text(
-                                              "Rp 50.000",
-                                              style: TextStyle(
-                                                fontSize: 15,
-                                                fontWeight: FontWeight.normal,
-                                                color: Color(0xff47526D),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                      Container(
-                                        // padding: EdgeInsets.symmetric(horizontal: 5),
-                                        alignment: Alignment.topCenter,
-                                        child: Icon(
-                                          CupertinoIcons.trash,
-                                          size: 30,
-                                          color: Colors.red,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                Container(
-                                  margin: EdgeInsets.only(top: 8),
-                                  height: 50,
-                                  alignment: Alignment.topLeft,
-                                  child: Row(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceAround,
-                                    children: [
-                                      Container(
-                                        padding: EdgeInsets.all(5),
-                                        decoration: BoxDecoration(
-                                          color: Colors.white,
-                                          borderRadius:
-                                              BorderRadius.circular(30),
-                                          boxShadow: [
-                                            BoxShadow(
-                                              color:
-                                                  Colors.grey.withOpacity(0.5),
-                                              spreadRadius: 3,
-                                              blurRadius: 10,
-                                              offset: Offset(0, 3),
-                                            ),
-                                          ],
-                                        ),
-                                        child: Icon(
-                                          CupertinoIcons.minus,
-                                          size: 20,
-                                          color: Color(0xff47526D),
-                                        ),
-                                      ),
-                                      Container(
-                                        margin: EdgeInsets.all(5),
-                                        child: Text(
-                                          "1",
-                                          style: TextStyle(
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.bold,
-                                            color: Color(0xff47526D),
-                                          ),
-                                        ),
-                                      ),
-                                      Container(
-                                        padding: EdgeInsets.all(5),
-                                        decoration: BoxDecoration(
-                                          color: Colors.white,
-                                          borderRadius:
-                                              BorderRadius.circular(30),
-                                          boxShadow: [
-                                            BoxShadow(
-                                              color:
-                                                  Colors.grey.withOpacity(0.5),
-                                              spreadRadius: 3,
-                                              blurRadius: 10,
-                                              offset: Offset(0, 3),
-                                            ),
-                                          ],
-                                        ),
-                                        child: Icon(
-                                          CupertinoIcons.plus,
-                                          size: 20,
-                                          color: Color(0xff47526D),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
+  State<krj> createState() => _krjState();
+}
 
-                  //bills/
-                  Padding(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 20,
-                      vertical: 30,
-                    ),
-                    child: Container(
-                      padding: EdgeInsets.all(20),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.5),
-                            spreadRadius: 3,
-                            blurRadius: 10,
-                            offset: Offset(0, 3),
-                          ),
-                        ],
-                      ),
-                      child: Column(
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.symmetric(
-                              vertical: 10,
-                            ),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  "Ringkasan Belanjaan",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                    color: Color(0xff47526D),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.symmetric(
-                              vertical: 10,
-                            ),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  "PPN 11% ",
-                                  style: TextStyle(
-                                    fontSize: 15,
-                                    color: Color(0xff47526D),
-                                  ),
-                                ),
-                                Text(
-                                  "Rp 10.000,00",
-                                  style: TextStyle(
-                                    fontSize: 15,
-                                    color: Color(0xff47526D),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.symmetric(
-                              vertical: 10,
-                            ),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  "Total belanjaan",
-                                  style: TextStyle(
-                                    fontSize: 15,
-                                    color: Color(0xff47526D),
-                                  ),
-                                ),
-                                Text(
-                                  "Rp 100.000,00",
-                                  style: TextStyle(
-                                    fontSize: 15,
-                                    color: Color(0xff47526D),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Divider(
-                            color: Color(0xff47526D),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.symmetric(
-                              vertical: 10,
-                            ),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  "Total Pembayaran",
-                                  style: TextStyle(
-                                    fontSize: 15,
-                                    fontWeight: FontWeight.bold,
-                                    color: Color(0xff47526D),
-                                  ),
-                                ),
-                                Text(
-                                  "Rp 110.000,00",
-                                  style: TextStyle(
-                                    fontSize: 15,
-                                    fontWeight: FontWeight.bold,
-                                    color: Color(0xff47526D),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
+final ButtonStyle raisedButtonStyle = ElevatedButton.styleFrom(
+  onPrimary: Colors.white,
+  primary: const Color.fromARGB(225, 4, 111, 161),
+   minimumSize: Size(88, 36),
+   padding: EdgeInsets.symmetric(horizontal: 70),
+   shape: const RoundedRectangleBorder(
+      borderRadius: BorderRadius.all(Radius.circular(20)),
+   ),
+  );
+
+class _krjState extends State<krj> {
+  int number = 0;
+  int number1 = 0;
+  int number2 = 0;
+  void tambah() {
+    setState(() {
+      number = number + 1;
+    });
+  }
+  void tambah1() {
+    setState(() {
+      number1 = number1 + 1;
+    });
+  }
+  void tambah2() {
+    setState(() {
+      number2 = number2 + 1;
+    });
+  }
+  void kurang() {
+    setState(() {
+      number  = number - 1;
+    });
+  }
+   void kurang1() {
+    setState(() {
+      number1  = number1 - 1;
+    });
+  }
+   void kurang2() {
+    setState(() {
+      number2  = number2 - 1;
+    });
+  }
+  void reset() {
+    setState(() {
+      number = 0;
+    });
+  }
+   void reset1() {
+    setState(() {
+      number1 = 0;
+    });
+  }
+   void reset2() {
+    setState(() {
+      number2 = 0;
+    });
+  }
+
+@override
+Widget build(BuildContext context) {
+  double globalWidth = MediaQuery.of(context).size.width;
+  return Scaffold(
+    body: SingleChildScrollView(
+      child: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Flexible(
+                child: Container(
+                   margin: EdgeInsets.only(left: 20, top: 30),
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                       color: Colors.black,
+                       blurRadius: 15,
+                      offset: Offset(2, 3))
+                    ],
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(50),
                   ),
-                  //btn//
-                  Container(
-                    padding: EdgeInsets.symmetric(horizontal: 15),
-                    height: 70,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        ElevatedButton(
-                          onPressed: () {},
-                          style: ButtonStyle(
-                            elevation: MaterialStateProperty.all(10),
-                            backgroundColor:
-                                MaterialStateProperty.all(Color(0xff47526D)),
-                            padding: MaterialStateProperty.all(
-                              EdgeInsets.symmetric(
-                                vertical: 20,
-                                horizontal: 120,
-                              ),
+                  child: Container(
+                    margin: EdgeInsets.only(left: 5, top: 2, bottom: 2),
+                      child: IconButton(
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                        icon: Icon(Icons.arrow_back_ios,
+                        color: Colors.red,
+                        ),
+                      ),
+                  ),
+                ),
+              ),
+              Flexible(
+                child: Container(
+                  margin: EdgeInsets.only(top: 30),
+                  child: Text("Cart",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ),
+              Flexible(
+                child: Container(
+                  margin: EdgeInsets.only(right: 30, top: 30),
+                  decoration: BoxDecoration(
+                     color: Colors.white,
+                     borderRadius: BorderRadius.circular(50),
+                     boxShadow: [
+                      BoxShadow(
+                      color: Colors.black,
+                      blurRadius: 15,
+                      offset: Offset(2, 3))
+                  ]),
+                child: IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.person),
+                ),
+                ),
+              ),
+            ],
+          ),
+          Container(
+             margin: EdgeInsets.only(top: 50, left: 20),
+             child: Column(
+              children: [
+                Row(
+                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                   children: [
+                    Container(
+                      width: (globalWidth / 2.9),
+                        height: (globalWidth / 2.9),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(15),
+                          image: DecorationImage(
+                            image: AssetImage(
+                              "images/Burger.png",
                             ),
-                            shape: MaterialStateProperty.all<
-                                    RoundedRectangleBorder>(
-                                RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(20))),
-                          ),
-                          child: Text(
-                            "Order Now",
-                            style: TextStyle(
-                                fontSize: 16, fontWeight: FontWeight.bold),
                           ),
                         ),
+                     ),
+                    Column(
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              child: Text(
+                                "Burger",
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Container(
+                               margin: EdgeInsets.only(top: 10),
+                               child: Text(
+                                  "Rp. 50.000,00",
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                  ),
+                                ),
+                            ),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                             GestureDetector(
+                                onTap: kurang,
+                                child: Container(
+                                  margin: EdgeInsets.only(right: 20),
+                                  width: 35,
+                                  height: 35,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(50),
+                                  ),
+                                  child: Container(
+                                    margin: EdgeInsets.only(bottom: 10),
+                                    child: Icon(
+                                      Icons.minimize_sharp,
+                                      color: Colors.black,
+                                      size: 25,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Container(
+                                margin: EdgeInsets.only(right: 10),
+                                child: Text(
+                                  number.toString(),
+                                ),
+                              ),
+                              GestureDetector(
+                                onTap: tambah,
+                                child: Container(
+                                  margin: EdgeInsets.only(left: 10),
+                                  width: 35,
+                                  height: 35,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(50),
+                                  ),
+                                  child: Container(
+                                    child: Icon(
+                                      Icons.add,
+                                      color: Colors.black,
+                                      size: 20,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                         ),
+                       ],
+                     ),
+                     Column(
+                      children: [
+                        IconButton(
+                          onPressed: () {
+                            reset();
+                          },
+                          icon: Icon(
+                                Icons.restore_from_trash_outlined,
+                                size: 40,
+                                color: Colors.red,
+                              )),
                       ],
-                    ),
+                     ),
+                   ],
+                 ),
+               ],
+             ),
+           ),
+           Container(
+            margin: EdgeInsets.only(top: 10, left: 20),
+            child: Column(
+              children: [
+                Row(
+                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                   children: [
+                    Container(
+                       width: (globalWidth / 2.9),
+                        height: (globalWidth / 2.9),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(15),
+                          image: DecorationImage(
+                            image: AssetImage(
+                              "images/Teh.png",
+                            ),
+                          ),
+                        ),
+                      ),
+                      Column(
+                        children: [
+                           Row(
+                            children: [
+                              Container(
+                                child: Text(
+                                  "Teh Botol",
+                                  style: TextStyle(
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                            ],
+                          ),
+                           Row(
+                            children: [
+                              Container(
+                                margin: EdgeInsets.only(top: 10),
+                                child: Text(
+                                  "Rp. 4.000,00",
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              GestureDetector(
+                                onTap: kurang1,
+                                child: Container(
+                                  margin: EdgeInsets.only(right: 20),
+                                  width: 35,
+                                  height: 35,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(50),
+                                  ),
+                                  child: Container(
+                                    margin: EdgeInsets.only(bottom: 10),
+                                    child: Icon(
+                                      Icons.minimize_sharp,
+                                      color: Colors.black,
+                                      size: 25,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Container(
+                                 margin: EdgeInsets.only(right: 10),
+                                child: Text(
+                                  number1.toString(),
+                                ),
+                              ),
+                               GestureDetector(
+                                onTap: tambah1,
+                                child: Container(
+                                  margin: EdgeInsets.only(left: 10),
+                                  width: 35,
+                                  height: 35,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(50),
+                                  ),
+                                  child: Container(
+                                    child: Icon(
+                                      Icons.add,
+                                      color: Colors.black,
+                                      size: 20,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          IconButton(
+                              onPressed: () {
+                                reset1();
+                              },
+                              icon: Icon(
+                                Icons.restore_from_trash_outlined,
+                                size: 40,
+                                color: Colors.red,
+                              ))
+                        ],
+                      ),
+                    ],
                   ),
                 ],
               ),
             ),
+          Container(
+            margin: EdgeInsets.only(top: 10, left: 20),
+            child: Column(
+              children: [
+                Row(
+                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                   children: [
+                    Container(
+                       width: (globalWidth / 2.9),
+                        height: (globalWidth / 2.9),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(15),
+                          image: DecorationImage(
+                            image: AssetImage(
+                              "images/Burger.png",
+                          ),
+                        ),
+                      ),
+                    ),
+                    Column(
+                      children: [
+                        Row(
+                           children: [
+                              Container(
+                                child: Text(
+                                  "Burger",
+                                  style: TextStyle(
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                            ],
+                        ),
+                        Row(
+                          children: [
+                             Container(
+                                margin: EdgeInsets.only(top: 10),
+                                child: Text(
+                                  "Rp. 35.000,00",
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                  ),
+                                ),
+                              ),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            GestureDetector(
+                                onTap: kurang2,
+                                child: Container(
+                                  margin: EdgeInsets.only(right: 20),
+                                  width: 35,
+                                  height: 35,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(50),
+                                  ),
+                                  child: Container(
+                                    margin: EdgeInsets.only(bottom: 10),
+                                    child: Icon(
+                                      Icons.minimize_sharp,
+                                      color: Colors.black,
+                                      size: 25,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                               Container(
+                                margin: EdgeInsets.only(right: 10),
+                                child: Text(
+                                  number2.toString(),
+                                ),
+                              ),
+                              GestureDetector(
+                                onTap: tambah2,
+                                child: Container(
+                                  margin: EdgeInsets.only(left: 10),
+                                  width: 35,
+                                  height: 35,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(50),
+                                  ),
+                                  child: Container(
+                                    child: Icon(
+                                      Icons.add,
+                                      color: Colors.black,
+                                      size: 20,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          IconButton(
+                              onPressed: () {
+                                reset2();
+                              },
+                              icon: Icon(
+                                Icons.restore_from_trash_outlined,
+                                size: 40,
+                                color: Colors.red,
+                              )),
+                        ],
+                      ),
+                    ],
+                 ),
+               ],
+            ),
           ),
-        ],
-      ),
-    );
-  }
+          Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Row(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(top: 15, left: 33),
+                      child: Text(
+                        "Ringkasan Belanja",
+                        style: TextStyle(
+                            fontSize: 17, fontWeight: FontWeight.bold),
+                      ),
+                    )
+                  ],
+                ),
+              Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Container(
+                        margin: EdgeInsets.only(top: 10, right: 29),
+                        child: Text("PPN 11%",
+                            style: TextStyle(
+                                fontSize: 15, fontWeight: FontWeight.w400))),
+                    Container(
+                      margin: EdgeInsets.only(top: 10),
+                      child: Text(
+                        "Rp. 10.000,230",
+                        style: TextStyle(
+                            fontSize: 15, fontWeight: FontWeight.w400),
+                      ),
+                    )
+                  ],
+                ),
+               Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Container(
+                        margin: EdgeInsets.only(top: 10),
+                        child: Text("Total Belanjaan",
+                            style: TextStyle(
+                                fontSize: 15, fontWeight: FontWeight.w400))),
+                    Container(
+                      margin: EdgeInsets.only(top: 10),
+                      child: Text(
+                        "Rp. 93.000,00",
+                        style: TextStyle(
+                            fontSize: 15, fontWeight: FontWeight.w400),
+                      ),
+                    )
+                  ],
+                ), 
+                Divider(
+                  // Tinggi Garis
+                  height: 20, 
+                  // Warna Garis
+                  color: const Color.fromARGB(100, 0, 0, 0), 
+                  // Ketebalan Garis
+                  thickness: 2, 
+                  // Jarak Awal Dari Sisi Kiri
+                  indent: 20, 
+                  // Jarak Akhir Dari Sisi Kanan
+                  endIndent: 20, 
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Container(
+                      child: Text(
+                        "Total Pembayaran",
+                        style: TextStyle(
+                            fontSize: 17, fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    Container(
+                      child: Text(
+                        "Rp. 134.000,00",
+                        style: TextStyle(
+                            fontSize: 17, fontWeight: FontWeight.bold),
+                      ),
+                    )
+                  ],
+                ),
+                 Container(
+                    margin: EdgeInsets.only(left: 20, top: 20),
+                    decoration: BoxDecoration(),
+                    child: ElevatedButton(
+                      style: raisedButtonStyle,
+                      onPressed: () {},
+                      child: Text('Checkout',
+                      style: TextStyle(fontSize: 20),
+                      selectionColor: Colors.white,
+                      ),
+                    ),
+                  ),
+                ],
+            ),
+         ],
+       ),
+     ),
+   );
+ }
 }

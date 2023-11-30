@@ -44,7 +44,7 @@ class navBarWidget extends StatelessWidget {
             onTap: () {
               Navigator.pushReplacement(context,
                   MaterialPageRoute(builder: (context) {
-                return cartPage();
+                return krj();
               }));
             },
             child: Icon(

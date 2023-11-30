@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:mart_aas/pages/addDat.dart';
 
 class masterItems extends StatelessWidget {
   @override
@@ -74,7 +74,7 @@ class masterItems extends StatelessWidget {
                 // padding: EdgeInsets.symmetric(horizontal: 5),
                 alignment: Alignment.center,
                 child: Icon(
-                  CupertinoIcons.trash,
+                  Icons.restore_from_trash_outlined,
                   size: 35,
                   color: Colors.red,
                 ),
@@ -93,7 +93,7 @@ class masterItems extends StatelessWidget {
               ClipRRect(
                 borderRadius: BorderRadius.circular(20),
                 child: Image.asset(
-                  "images/Teh.png",
+                  "images/Teh.Png",
                   height: 80,
                   width: 80,
                   fit: BoxFit.fitHeight,
@@ -111,7 +111,7 @@ class masterItems extends StatelessWidget {
                 // padding: EdgeInsets.symmetric(horizontal: 5),
                 alignment: Alignment.center,
                 child: Icon(
-                  CupertinoIcons.trash,
+                  Icons.restore_from_trash_outlined,
                   size: 35,
                   color: Colors.red,
                 ),
@@ -148,7 +148,7 @@ class masterItems extends StatelessWidget {
                 // padding: EdgeInsets.symmetric(horizontal: 5),
                 alignment: Alignment.center,
                 child: Icon(
-                  CupertinoIcons.trash,
+                  Icons.restore_from_trash_outlined,
                   size: 35,
                   color: Colors.red,
                 ),

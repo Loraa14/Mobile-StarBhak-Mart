@@ -33,7 +33,7 @@ class masterBar extends StatelessWidget {
                   )
                 ],
               ),
-              child: Icon(CupertinoIcons.back),
+              child: Icon(Icons.arrow_back_ios),
             ),
           ),
           Text(
@@ -59,7 +59,7 @@ class masterBar extends StatelessWidget {
                   )
                 ],
               ),
-              child: Icon(CupertinoIcons.person),
+              child: Icon(Icons.person),
             ),
           ),
         ],
